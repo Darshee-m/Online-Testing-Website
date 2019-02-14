@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>Sign-In</title>
+
+  <link rel='stylesheet' href='http://codepen.io/assets/libs/fullpage/jquery-ui.css'>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/loginstyle.css" media="screen" type="text/css" />
+
+<script>
+$(document).ready(function(){
+    $("#subj").hide();
+    $(".user-type").change(function(){
+	$("#subj").toggle();
+    });
+});
+</script>
+
+</head>
+
+<body>
+  <br><br><br><br>
+  <div class="login-card">
+    <h1>Sign-in</h1><br>
+  <form method="get" action="registration.php">
+    <input type="text" name="username" placeholder="Username">
+    <input type="password" name="password" placeholder="Password">
+    User type &nbsp &nbsp &nbsp &nbsp<select name="usertype" class="user-type">
+  	<option value="student">Student</option>
+  	<option value="faculty">Faculty</option>
+    </select><br><br>
+    Division &nbsp &nbsp &nbsp &nbsp<select name="divi">
+  	<option value="A">A</option>
+  	<option value="B">B</option>
+    </select><br><br>
+    
+    <div id="subj">
+    	Subject &nbsp &nbsp &nbsp &nbsp<select name="subject_taught">
+  	<option value="AOA">Algorithms</option>
+  	<option value="DBMS">Database Management Systems</option>
+	<option value="DCN">Digital Communication Networks</option>
+	<option value="DS">Data Structures</option>
+	</select><br><br>
+   </div>
+    <input type="submit" name="Sign-in" class="login login-submit" value="Sign-in">
+  </form>
+</div>
+
+  <script src='http://codepen.io/assets/libs/fullpage/jquery_and_jqueryui.js'></script>
+
+</body>
+
+</html>

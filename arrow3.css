@@ -1,0 +1,49 @@
+.arrow_sl {
+	position: relative;
+	left:200px;
+  width: 100px;
+}
+
+.arrow_sl .curve_sl {
+	border: 2px solid #BE5F4B;
+	border-color: transparent transparent transparent #BE5F4B;
+	height: 200px;
+	width: 1200px;
+	border-radius: 150px 0 0 200px;
+  -ms-transform:rotate(180deg);
+  position:relative;
+  right:150px;
+  bottom:400px;
+  
+}
+
+.arrow_sl .point_sl {
+	position: absolute;
+	left: 40px;
+	top: 315px;
+}
+
+.arrow_sl .point_sl:before, .arrow_sl .point_sl:after {
+	border: 1px solid #BE5F4B;
+	height: 25px;
+	content: "";
+	position: absolute;
+}
+
+.arrow_sl .point_sl:before {
+	top: -120px;
+	left: 970px;
+	transform:rotate(-74deg);
+	-webkit-transform:rotate(10deg);
+  -moz-transform:rotate(-74deg);
+  -ms-transform: rotate(-74deg);
+}
+
+.arrow_sl .point_sl:after {
+  top: -110px;
+	left: 980px;
+	transform:rotate(12deg);
+	-webkit-transform: rotate(-100deg);
+  -moz-transform:rotate(12deg);
+  -ms-transform: rotate(12deg);
+}
